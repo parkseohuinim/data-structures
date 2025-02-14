@@ -1,63 +1,21 @@
-# 📌 macOS 시스템 관련 불필요한 파일
-.DS_Store
-.AppleDouble
-.LSOverride
+# data-structures/cpp/ 디렉토리 내의 실행 파일 제외
+data-structures/cpp/*
+!data-structures/cpp/*.cpp
+!data-structures/cpp/*.h
+!data-structures/cpp/*.hpp
+!data-structures/cpp/README.md
 
-# 📌 macOS 특정 폴더 및 설정 파일
-__MACOSX/
+# macOS 시스템 파일
 .DS_Store
 .DS_Store?
 ._*
 .Spotlight-V100
 .Trashes
-*.swp
-*.swo
-*.swn
-*.bak
 
-# 📌 macOS Finder 관련 파일
-.fseventsd
-.localized
-.metadata_never_index
-.VolumeIcon.icns
-._*
-
-# macOS 실행 파일 제외 (확장자 없는 실행 파일)
-cpp/*             # cpp 폴더 내 모든 파일 무시
-!cpp/*.cpp        # .cpp 파일은 제외 (Git에 추가됨)
-!cpp/*.h          # .h 파일도 제외 (Git에 추가됨)
-
-# 📌 C++ 관련 빌드 파일 및 IDE 설정 파일
+# C++ 컴파일 관련 파일
 *.o
 *.obj
 *.out
 *.exe
-*.a
-*.lib
-*.so
-*.dll
+*.app
 *.dSYM/
-.vscode/
-.idea/
-.ccls-cache/
-.clangd/
-
-# 📌 Java 관련 빌드 파일 및 IDE 설정 파일
-*.class
-*.jar
-*.war
-*.ear
-*.log
-*.iml
-target/
-bin/
-.gradle/
-.settings/
-.classpath
-.project
-out/
-
-# 📌 기타 OS 관련 불필요한 파일
-Thumbs.db
-Desktop.ini
-
