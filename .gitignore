@@ -1,0 +1,29 @@
+# IDE 설정 파일
+.idea/
+.vscode/
+
+# cpp 디렉토리의 모든 파일을 무시
+cpp/*
+# cpp 확장자 파일은 추적
+!cpp/*.cpp
+!cpp/*.h
+!cpp/*.hpp
+
+# macOS 시스템 파일
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+
+# C++ 컴파일 관련 파일
+*.o
+*.obj
+*.out
+*.exe
+*.app
+*.dSYM/
+
+# 📌 특정 파일 다시 포함시키기
+!README.md
+!.gitignore
