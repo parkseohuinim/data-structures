@@ -22,6 +22,11 @@ __MACOSX/
 .VolumeIcon.icns
 ._*
 
+# macOS 실행 파일 제외 (확장자 없는 실행 파일)
+cpp/*             # cpp 폴더 내 모든 파일 무시
+!cpp/*.cpp        # .cpp 파일은 제외 (Git에 추가됨)
+!cpp/*.h          # .h 파일도 제외 (Git에 추가됨)
+
 # 📌 C++ 관련 빌드 파일 및 IDE 설정 파일
 *.o
 *.obj
